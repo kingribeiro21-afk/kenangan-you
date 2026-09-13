@@ -1,0 +1,11 @@
+MUSIK
+=====
+Masukkan file musik bernama:
+
+music.mp3
+
+ke folder yang sama dengan index.html.
+
+Browser HP biasanya tidak mengizinkan audio autoplay sebelum ada interaksi.
+Pada website ini musik dicoba mulai setelah pengguna menekan area website,
+dan tombol "♫ MUSIC" bisa digunakan untuk play/pause.

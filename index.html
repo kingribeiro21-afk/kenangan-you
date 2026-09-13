@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#970007">
+  <title>Gift For You - Salsa Cintaku</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="app">
+    <section class="scene active" id="page1" data-page="1">
+      <div class="art">
+        <img src="page1.png" alt="Opening">
+        <button class="hotspot envelope" data-go="2" aria-label="Buka hadiah"></button>
+      </div>
+    </section>
+
+    <section class="scene" id="page2" data-page="2">
+      <div class="art">
+        <img src="page2.png" alt="Gift for you">
+        <button class="hotspot message" data-go="3" aria-label="Message"></button>
+        <button class="hotspot memories" data-go="4" aria-label="Memories"></button>
+        <button class="hotspot flowers" data-go="5" aria-label="Flowers"></button>
+      </div>
+    </section>
+
+    <section class="scene" id="page3" data-page="3">
+      <div class="art">
+        <img src="page3.png" alt="Message">
+        <!-- NEXT is placed over the lower-right area. -->
+        <button class="hotspot next-message" data-go="4" aria-label="Next"></button>
+      </div>
+    </section>
+
+    <section class="scene tall" id="page4" data-page="4">
+      <div class="scroll-art">
+        <img src="page4.png" alt="Memories">
+        <!-- NEXT / continue area near the bottom of the long Canva page. -->
+        <button class="hotspot next-memories" data-go="5" aria-label="Next"></button>
+      </div>
+    </section>
+
+    <section class="scene tall" id="page5" data-page="5">
+      <div class="scroll-art">
+        <img src="page5.png" alt="Flowers">
+        <button class="hotspot next-flowers" data-go="6" aria-label="Next"></button>
+      </div>
+    </section>
+
+    <section class="scene" id="page6" data-page="6">
+      <div class="art">
+        <img src="page6.png" alt="Foto untuk Salsa">
+        <button class="hotspot final-photo" data-go="2" aria-label="Kembali ke menu"></button>
+      </div>
+    </section>
+  </main>
+
+  <audio id="bgMusic" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="musicButton" class="music-button" type="button" aria-label="Musik">♫ MUSIC</button>
+  <div id="musicNotice" class="music-notice">Tap sekali untuk menyalakan musik ♫</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
